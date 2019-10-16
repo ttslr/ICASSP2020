@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="google-site-verification" content="ftFOlJETX-2KNjaPh8W6s8lhigItRuu9fOmjHZZ0nY0" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Teacher-Student Training for Robust Tacotron-based TTS</title>
+</head>
+<style type="text/css">
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  audio {
+    width: 100%;
+  }
+
+  thead>tr>th:first-child {
+    width: 96px;
+  }
+
+  @media (max-width: 767px) {
+    .big-screen {
+      display: none;
+    }
+  }
+
+  @media (min-width: 767px) {
+    .small-screen {
+      display: none;
+    }
+  }
+</style>
+
+<body>
+  <header class="header">
+    <div class="jumbotron bg-secondary text-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <h1>
+               <a class="text-light">
+              Teacher-Student Training for Robust Tacotron-based TTS<br>
+             <font size=5><span style="color:#000000"> Authors: Rui Liu, Berrak Sisman, Haizhou Li </font> </a></h1>
+            <p>
+              <div class="row">
+              </div>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row" id="result">
+        <div class="col-md-12">
+          
+             
+                   
+                  <div class="big-screen">
+                    <br /><br />
+                     <h2>-------------------->   Mandarin Speech Samples   <--------------------</h2>
+                     <br /><br />
+                    <!--  Naturalness Evaluation -->
+                    <table class="table">
+                      <thead>
+                        <!-- Mandarin -->
+                        <tr>
+                             <th colspan=5><h4>1 - Naturalness Evaluation</h4></th>
+                        </tr>
+                        
+                      </thead>
+                      <tbody>
+                                
+                                
+                                <tr>
+                                    <th></th>
+                                    <th style="text-align:center;">   A (baseline)</th>
+                                    <th style="text-align:center;">   B (proposed)</th>
+                                    <th style="text-align:center;">   C </th>
+                          
+                                </tr>
+                                <!-- single sentence -->
+                                <tr>
+                                  <th colspan=5 align="center">"城市的灯光真美丽，不是吗？"</th>
+                                </tr>
+                                <tr>
+                                  <th scope="row">    </th>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/cn/A/163-ss.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/cn/B/163.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/cn/C/163-gta.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  
+                                  </tr>
+                                <!-- single sentence -->
+
+
+                                <!-- single sentence -->
+                                <tr>
+                                  <th colspan=5 align="center">“因某一个细节而功败垂成，是否是最大的悲哀呢。”</th>
+                                </tr>
+                                <tr>
+                                  <th scope="row">    </th>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/cn/A/293-ss.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/cn/B/293.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/cn/C/293-gta.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  
+                                  </tr>
+                                <!-- single sentence -->
+                      </tbody>
+                    </table>
+
+
+
+                    <!--  Robusness Evaluation -->
+                    <table class="table">
+                      <thead>
+                        <!-- Mandarin -->
+                        <tr>
+                             <th colspan=5><h4>2 - Robusness Evaluation</h4></th>
+                        </tr>
+                        
+                      </thead>
+                      <tbody>
+                                
+                                
+                                <tr>
+                                    <th></th>
+                                    <th style="text-align:center;">   A (baseline)</th>
+                                    <th style="text-align:center;">   B (proposed)</th>
+                                    <th style="text-align:center;">   C </th>
+                          
+                                </tr>
+                                
+
+
+                                <!-- single sentence -->
+                                <tr>
+                                  <th colspan=5 align="center">“这个暂用名起的也真是有想象力，就像最近很多人在谈新零售，这也一定是个暂用名，因为我们只能用旧名词来命名一个新事物，但是我们心里得清楚，它未来一定是一个全新的东西。”</th>
+                                </tr>
+                                <tr>
+                                  <th scope="row">    </th>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/cn/A/002-ss.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/cn/B/002.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/cn/C/002.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  
+                                  </tr>
+                                <!-- single sentence -->
+                      </tbody>
+                    </table>
+
+
+
+                     <!--  Prosody Evaluation -->
+                    <table class="table">
+                      <thead>
+                        <!-- Mandarin -->
+                        <tr>
+                             <th colspan=5><h4>3 - Prosody Evaluation</h4></th>
+                        </tr>
+                        
+                      </thead>
+                      <tbody>
+                                
+                                
+                                <tr>
+                                    <th></th>
+                                    <th style="text-align:center;">   A (baseline)</th>
+                                    <th style="text-align:center;">   B (proposed)</th>
+                                    <th style="text-align:center;">   C </th>
+                          
+                                </tr>
+                                <!-- single sentence -->
+                                <tr>
+                                  <th colspan=5 align="center">"1989年<font color='red'>|</font>  受英国国家科学与工程研究委员会<font color='red'>|</font>访问研究基金资助 <font color='red'>|</font>   到英国剑桥大学 <font color='red'>|</font> 微电子研究中心 <font color='red'>|</font> 做 <font color='red'>|</font>博士后研究"</th>
+                                </tr>
+                                <tr>
+                                  <th scope="row">    </th>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/cn/A/459-ss.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/cn/B/459.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/cn/C/459-gta.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  
+                                  </tr>
+                                <!-- single sentence -->
+
+
+                                <!-- single sentence -->
+                                <tr>
+                                  <th colspan=5 align="center">"清晨入古寺<font color='red'>|</font>初日照高林"</th>
+                                </tr>
+                                <tr>
+                                  <th scope="row">    </th>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/cn/A/425-ss.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/cn/B/425.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/cn/C/425-gta.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  
+                                  </tr>
+                                <!-- single sentence -->
+                      </tbody>
+                    </table>
+                    <br /><br />
+                    <!--  English Speech Samples-->
+                    <h2>-------------------->   English Speech Samples   <--------------------</h2>
+                    <br /><br />
+                    <!--  Naturalness Evaluation -->
+                    <table class="table">
+                      <thead>
+                        <!-- Mandarin -->
+                        <tr>
+                             <th colspan=5><h4>1 - Naturalness Evaluation</h4></th>
+                        </tr>
+                        
+                      </thead>
+                      <tbody>
+                                
+                                
+                                <tr>
+                                    <th></th>
+                                    <th style="text-align:center;">   A (baseline)</th>
+                                    <th style="text-align:center;">   B (proposed)</th>
+                                    <th style="text-align:center;">   C </th>
+                          
+                                </tr>
+                                <!-- single sentence -->
+                                <tr>
+                                  <th colspan=5 align="center">"all or nothing, now or never."</th>
+                                </tr>
+                                <tr>
+                                  <th scope="row">    </th>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/A/060-ss.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/B/060-B.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/C/060-D.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  
+                                  </tr>
+                                <!-- single sentence -->
+
+
+                                <!-- single sentence -->
+                                <tr>
+                                  <th colspan=5 align="center">"The island has since changed hands and has its own farm."</th>
+                                </tr>
+                                <tr>
+                                  <th scope="row">    </th>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/A/029-ss.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/B/029-B.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/C/029-D.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  
+                                  </tr>
+                                <!-- single sentence -->
+                      </tbody>
+                    </table>
+
+
+
+                    <!--  Robusness Evaluation -->
+                    <table class="table">
+                      <thead>
+                        <!-- Mandarin -->
+                        <tr>
+                             <th colspan=5><h4>2 - Robusness Evaluation</h4></th>
+                        </tr>
+                        
+                      </thead>
+                      <tbody>
+                                
+                                
+                                <tr>
+                                    <th></th>
+                                    <th style="text-align:center;">   A (baseline)</th>
+                                    <th style="text-align:center;">   B (proposed)</th>
+                                    <th style="text-align:center;">   C </th>
+                          
+                                </tr>
+                                <!-- single sentence -->
+                                <tr>
+                                  <th colspan=5 align="center">"copy backslash backslash j o h n f a n four backslash scratch backslash M i c r o s o f t dot S h a r e P o i n t dot"</th>
+                                </tr>
+                                <tr>
+                                  <th scope="row">    </th>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/A/031-ss.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/B/031-B.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/C/031-D.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  
+                                  </tr>
+                                <!-- single sentence -->
+
+
+                                <!-- single sentence -->
+                                <tr>
+                                  <th colspan=5 align="center">"Anuraag backslash backslash r a d u r five backslash d e b u g dot one eight zero nine underscore P R two h dot s t s contains"</th>
+                                </tr>
+                                <tr>
+                                  <th scope="row">    </th>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/A/034-ss.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/B/034-B.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/C/034-D.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  
+                                  </tr>
+                                <!-- single sentence -->
+                      </tbody>
+                    </table>
+
+
+
+                     <!--  Prosody Evaluation -->
+                    <table class="table">
+                      <thead>
+                        <!-- Mandarin -->
+                        <tr>
+                             <th colspan=5><h4>3 - Prosody Evaluation</h4></th>
+                        </tr>
+                        
+                      </thead>
+                      <tbody>
+                                
+                                
+                                <tr>
+                                    <th></th>
+                                    <th style="text-align:center;">   A (baseline)</th>
+                                    <th style="text-align:center;">   B (proposed)</th>
+                                    <th style="text-align:center;">   C </th>
+                          
+                                </tr>
+                                <!-- single sentence -->
+                                <tr>
+                                  <th colspan=5 align="center">"A person who truly loves you will never let you go <font color="red"> | </font> no matter how hard <font color="red"> | </font>  the situation is.",</th>
+                                </tr>
+                                <tr>
+                                  <th scope="row">    </th>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/A/073-ss.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/B/073-B.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/C/073-D.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  
+                                  </tr>
+                                <!-- single sentence -->
+
+
+                                <!-- single sentence -->
+                                <tr>
+                                  <th colspan=5 align="center">“Give so much time to improving yourself<font color="red"> | </font> that you won't have time to criticize others.”</th>
+                                </tr>
+                                <tr>
+                                  <th scope="row">    </th>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/A/077-ss.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/B/077-B.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  <td>
+                                    <audio controls>
+                                      <source src="./audio/en/C/077-D.wav" type="audio/wav" />
+                                      Your browser does not support the audio element.
+                                    </audio>
+                                  </td>
+                                  
+                                  </tr>
+                                <!-- single sentence -->
+                      </tbody>
+                    </table>
+
+
+
+
+
+
+
+                  </div>
+                 
+        </div>
+      </div>
+      <hr>
+      <div class="row" id="ref">
+        <div class="col">
+          <!--<h2>References</h2>
+          <div>
+            
+            <p>
+              <a name="1">[1]</a>
+               Mirjam Wester and Hui Liang, “The emime mandarin bilingual database,” Tech. Rep. EDI-INF-RR-1396, The 
+               University of Edinburgh, 2011.
+            </p>
+
+          </div>
+         -->
+        </div>
+      </div>
+      <hr>
+      <!-- <div class="row" id="contact">
+          <div class="col">
+            <h2>Contact</h2>
+            <div></div>
+          </div>
+        </div> -->
+    </div>
+  </main>
+  <footer class="bg-secondary text-light mt-4 pt-3 pb-2 ">
+    <div class="container">
+      <p class="text-center">
+        
+      </p>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
