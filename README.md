@@ -1,9 +1,9 @@
 # ICASSP2020-demo
 
-"Teacher-Student Training for Robust Tacotron-based TTS",
+__"Teacher-Student Training for Robust Tacotron-based TTS"__,
 
 
-Authors: Rui Liu, Berrak Sisman, Jingdong Li, Feilong Bao, Guanglai Gao, Haizhou Li
+__Authors__: Rui Liu, Berrak Sisman, Jingdong Li, Feilong Bao, Guanglai Gao, Haizhou Li
 
 submitted to __ICASSP2020__
 
