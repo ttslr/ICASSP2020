@@ -1,4 +1,4 @@
-# ICASSP2020
+# ICASSP2020-demo
 
 "Teacher-Student Training for Robust Tacotron-based TTS",
 
