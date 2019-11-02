@@ -13,6 +13,11 @@ submitted to __ICASSP2020__
 Examples of synthesized speech by "__Tacotron2-SS__" , "__Tacotron2-FR__" and "__Tacotron2-KD__" systems.
 
 
+
+https://ttslr.github.io/ICASSP2020/
+
+
+
 __Tacotron2-FR__: Tacotron2-based model with free running (FR) mode
 
 
