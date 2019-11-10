@@ -14,7 +14,7 @@ Examples of synthesized speech by "__Tacotron2-SS__" , "__Tacotron2-FR__" and "_
 
 
 
-https://ttslr.github.io/ICASSP2020/
+Speech samples are available at   https://ttslr.github.io/ICASSP2020/
 
 
 
