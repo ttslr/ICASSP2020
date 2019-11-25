@@ -8,13 +8,13 @@ __Authors__: Rui Liu, Berrak Sisman, Jingdong Li, Feilong Bao, Guanglai Gao, Hai
 submitted to __ICASSP2020__
 
 
-## Audio samples
+## Speech samples
 
 Examples of synthesized speech by "__Tacotron2-SS__" , "__Tacotron2-FR__" and "__Tacotron2-KD__" systems.
 
 
 
-Speech samples are available at   https://ttslr.github.io/ICASSP2020/
+Speech samples are available at   [demo page](https://ttslr.github.io/ICASSP2020/).
 
 
 
