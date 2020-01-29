@@ -5,7 +5,7 @@ __"Teacher-Student Training for Robust Tacotron-based TTS"__,
 
 __Authors__: Rui Liu, Berrak Sisman, Jingdong Li, Feilong Bao, Guanglai Gao, Haizhou Li
 
-submitted to __ICASSP2020__
+__accepted__ to __ICASSP2020__
 
 
 ## Speech samples
