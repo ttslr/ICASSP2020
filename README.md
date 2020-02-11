@@ -7,6 +7,8 @@ __Authors__: Rui Liu, Berrak Sisman, Jingdong Li, Feilong Bao, Guanglai Gao, Hai
 
 accepted and to be presented at __ICASSP2020__
 
+[paper](https://arxiv.org/pdf/1911.02839.pdf)
+
 
 ## Speech samples
 
