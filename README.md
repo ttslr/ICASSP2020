@@ -30,6 +30,20 @@ __Tacotron2-KD__: Tacotron2-based model with proposed teacher-student training m
 
 
 
+### Reference
+
+Please kindly cite this paper in your publications if it helps your research:
+
+```
+@inproceedings{Rui2020tacotron-KD,
+    title={Teacher-Student Training for Robust Tacotron-based TTS},
+    author={Rui Liu, Berrak Sisman, Jingdong Li, Feilong Bao, Guanglai Gao and Haizhou Li},
+    booktitle={Proceedings of the 2020 IEEE International Conference on Acoustics,  Speech and Signal Processing (ICASSP)},
+    year={2020}
+}
+```
+
+:)
 
 
 
