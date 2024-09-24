@@ -5,9 +5,9 @@ __"Teacher-Student Training for Robust Tacotron-based TTS"__,
 
 __Authors__: Rui Liu, Berrak Sisman, Jingdong Li, Feilong Bao, Guanglai Gao, Haizhou Li
 
-accepted and to be presented at __ICASSP2020__
+This paper was accepted by __ICASSP2020__
 
-[paper](https://arxiv.org/pdf/1911.02839.pdf)
+[paper](https://ieeexplore.ieee.org/document/9054681)
 
 
 ## Speech samples
@@ -35,12 +35,16 @@ __Tacotron2-KD__: Tacotron2-based model with proposed teacher-student training m
 Please kindly cite this paper in your publications if it helps your research:
 
 ```
-@inproceedings{Rui2020tacotron-KD,
-    title={Teacher-Student Training for Robust Tacotron-based TTS},
-    author={Rui Liu, Berrak Sisman, Jingdong Li, Feilong Bao, Guanglai Gao and Haizhou Li},
-    booktitle={Proceedings of the 2020 IEEE International Conference on Acoustics,  Speech and Signal Processing (ICASSP)},
-    year={2020}
-}
+@INPROCEEDINGS{9054681,
+  author={Liu, Rui and Sisman, Berrak and Li, Jingdong and Bao, Feilong and Gao, Guanglai and Li, Haizhou},
+  booktitle={ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={Teacher-Student Training For Robust Tacotron-Based TTS}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={6274-6278},
+  doi={10.1109/ICASSP40776.2020.9054681}}
+
 ```
 
 :)
